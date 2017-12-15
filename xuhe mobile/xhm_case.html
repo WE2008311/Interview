@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"  />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no">
+    <meta content="email=no" name="format-detection" />
+    <title>医疗案例—旭和健康</title>
+    <link href="xhm_css/common.css" type="text/css" rel="stylesheet">
+    <link href="xhm_css/case.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="xhm_js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="xhm_js/nav.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="head">
+            <p class="title">医疗案例</p>
+            <div class="nav">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul class="tag_nav" id="tag_nav">
+                <li><a href="xhm_index.html">首页</a></li>
+                <li><a href="xhm_japan.html">日本医疗</a></li>
+                <li><a href="xhm_eu.html">欧洲医疗</a></li>
+                <li><a href="xhm_case.html">医疗案例</a></li>
+                <li><a href="xhm_about.html">关于我们</a></li>
+            </ul>
+        </header>
+        <!--header-->
+        <a href="#"><img src="xhm_images/case/banner.png" class="banner"></a>
+
+        <div class="case">
+            <p>医疗案例</p>
+            <div class="case_info"><img src="xhm_images/case/case_1.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+            <div class="case_info"><img src="xhm_images/case/case_2.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+            <div class="case_info"><img src="xhm_images/case/case_3.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+            <div class="case_info"><img src="xhm_images/case/case_4.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+            <div class="case_info"><img src="xhm_images/case/case_5.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+            <div class="case_info"><img src="xhm_images/case/case_6.png"><h1>医疗案例名称</h1><h2>是日本历史悠久、实力雄厚的一家综合医院，从1933年成立开始形成了如今的占地7000多平米，集治疗、预防、体检等为一体的综合诊疗中心，拥有各项资质认定40多项。</h2></div>
+        </div>
+
+        <footer>
+            <img src="xhm_images/footer_code.png">
+            <p>客服热线</p>
+            <h1>400-880-6688</h1>
+            <p>Copyright © 北京旭和科技. All Rights Reserved.   京ICP备123456789号</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if(clientWidth >=1080){
+                            clientWidth = 1080;
+                        }
+                        docEl.style.fontSize = 20 * (clientWidth / 540) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</body>
+</html>

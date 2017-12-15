@@ -1,0 +1,11 @@
+body{height: 160px;width: 100%;min-width: 1000px;background: #1ab4c3}
+.con{width: 1000px;margin: 55px auto 0}
+.con .left{float: left}
+.con .left a{color: #ffffff}
+.con .left i{display: inline-block;width: 1px;height: 11px;margin: 0 13px;background: #ffffff;vertical-align: -2px}
+.con .left p{color: #ffffff;}
+.con .right{float: right;margin-right: 3px}
+.con .right dl{width: 168px;}
+.con .right dl dt{float:left;background: url("../xhp_images/footer/footer_tel.png") no-repeat center;width: 34px;height: 34px;margin-right: 6px;margin-top: 6px}
+.con .right dl dd{color: #ffffff}
+.con .right dl dd span{display:inline-block;font-size: 20px;color: #ffffff;line-height: 18px}

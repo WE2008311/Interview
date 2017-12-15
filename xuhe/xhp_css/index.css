@@ -1,0 +1,73 @@
+#DB_tab16 {width:100%;min-width:1000px;height:585px;position:relative;overflow:hidden;background:#fff;}
+#DB_tab16 .DB_img{position:relative;width:100%; height:560px;clear: both}
+#DB_tab16 .DB_img li{position:absolute;width:100%;height:100%;}
+#DB_tab16 .DB_img li a{display:block;width:100%;height:100%;}
+
+#DB_tab16 .DB_btn{position:absolute; bottom:0px;width:100%;text-align:center; }
+#DB_tab16 .DB_btn li{display:inline;cursor:pointer;margin:0 3px}
+#DB_tab16 .DB_dirBtn{position:absolute;width:1060px; height:0; top:140px; left:50%; margin-left:-530px;}
+#DB_tab16 .DB_dirBtn .DB_prev{position:absolute;left:0px;cursor:pointer;}
+#DB_tab16 .DB_dirBtn .DB_next{position:absolute;right:0px;cursor:pointer;}
+/*banner����*/
+
+.check{width: 100%;height:196px;min-width: 1000px;border-bottom: 1px solid #c3c3c3;margin-top: 69px;}
+.check .check_con{width: 1000px;margin:0 auto}
+.check .check_con img{float:left;margin-left: 54px;max-width: 275px;max-height: 196px}
+.check .check_con .check_right{float:right;margin-top: 17px;width: 630px}
+.check .check_con .check_right h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.check .check_con .check_right h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;margin-left: 12px}
+.check .check_con .check_right p{margin-top: 20px;font-size: 14px;color: #2e2e2e}
+.check .check_con .check_right a{margin-top:17px;color: #ffffff;display: inline-block;width: 59px;height: 28px;line-height:28px;background: #1ab4c3 url("../images/index/cross.png") no-repeat 11px 8px;padding-left:31px}
+.check .check_con .check_right a:hover{background:#1a9fc3 url("../xhp_images/index/cross.png") no-repeat 11px 8px}
+
+.medical{width: 1000px;margin: 81px auto 0;text-align: center}
+.medical h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.medical h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;margin-left: 12px;display: block;margin-top: 9px}
+.medical .medical_pic{width: 1000px;margin-top: 60px}
+.medical .medical_pic dl{width: 216px;float: left;margin: 0 58px 76px;}
+.medical .medical_pic dl dd{width: 216px;margin-top: 21px}
+.medical .medical_pic dl dd a{font-size: 18px;color: #2e2e2e}
+.medical .medical_pic dl dd a:hover{color: #1ab4c3}
+.medical .medical_pic dl dd span{display: block;margin-top: 14px;color: #2e2e2e;text-align: justify}
+.round_3{margin-left: 35px}
+
+.service{clear:both;height: 671px;width: 100%;background: #f0f3f6;min-width: 1000px}
+.service .service_con{width: 1000px;margin: 60px auto 0;text-align: center;padding-top: 60px}
+.service .service_con h1{color: #1ab4c3;font-size: 32px;font-weight: normal;}
+.service_con h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;display: block;margin-top: 9px}
+.service_con .service_pic{width: 100%;height: 380px;margin-top: 61px}
+.service_con .service_pic .pic_left{float:left;position:relative;z-index:1;background: url("../xhp_images/index/service_1.png") no-repeat center;width: 327px;height: 380px}
+.left_gradient{position: absolute;z-index:2;width: 327px;height: 380px;background: linear-gradient(rgba(255,255,255,0)60%,rgba(0,0,0,.4)100%)}
+.color_cover{text-align:left;position: absolute;z-index:3;width: 327px;height: 380px;background:rgba(0,171,227,.64)}
+.color_cover p{color:#ffffff;font-size: 22px;margin: 308px 0 0 21px}
+.color_cover p span{color:#ffffff;font-size:12px;display: block;margin-top: 2px}
+.pic_right{margin-left:327px;width: 670px;height:380px;}
+.pic_right_1,.pic_right_2{float: left}
+.pic_right_1{position: relative;z-index: 1;width: 335px;height: 190px}
+.pic_right_gradient1{position: absolute;z-index: 2;width: 100%;height: 100%;background:linear-gradient(rgba(255,255,255,0)60%,rgba(0,0,0,.9)100%)}
+.pic_right_gradient1 p{position:absolute;color:#ffffff;font-size: 22px;margin: 124px 0 0 19px;text-align: left}
+.pic_right_gradient1 p span{color:#ffffff;font-size:12px;display: block;margin-top: 2px}
+.pic_right_2{position: relative;z-index: 1;width: 335px;height: 190px}
+.pic_right_gradient2{position: absolute;z-index: 2;width: 100%;height: 100%;background:rgba(0,181,153,.82)}
+.pic_right_gradient2 p{position:absolute;color:#ffffff;font-size: 22px;margin: 124px 0 0 17px;text-align: left;text-transform: uppercase;font-weight: bold}
+.pic_right_gradient2 p span{color:#ffffff;font-size:12px;display: block;margin-top: 2px;font-weight: normal}
+
+.db{width: 1000px;margin: 0 auto;padding-top:56px;clear: both}
+.db .db_left{float: left;margin: 116px 0 0 79px}
+.db .db_left h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.db .db_left h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;margin-left: 12px}
+.db .db_left p{width:517px;margin-top: 20px;font-size: 14px;color: #2e2e2e}
+
+.black_box{z-index:10;width: 100%;height:100%;background:rgba(0,0,0,.3);position:fixed;display: none}
+.sheet{display:none;z-index:11;box-shadow:0 0 22px #000;-webkit-box-shadow:0 0 22px #000;width: 500px;height: 536px;position: fixed;left: 50%;top: 50%;margin: -268px 0 0 -250px;background: #FFFFFF}
+.sheet i{background: url("../xhp_images/sidebar/cancel.png") no-repeat center;width: 16px;height: 16px;display:block;margin: 20px 0 0 467px;cursor: pointer}
+.sheet p{font-size: 22px;color: #1ab4c3;margin: 4px 0 0 64px}
+.sheet select{width: 377px;height: 41px;border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:0 10px;border-radius: 21px;-webkit-border-radius:2px}
+.sheet input{width: 357px;height: 41px;border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:0 10px;border-radius: 2px;-webkit-border-radius:2px}
+.sheet textarea{width:357px;height: 101px; border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:10px 10px;border-radius: 21px;-webkit-border-radius:2px}
+.sheet .btn{color: #FFFFFF;background: #1ab4c3;cursor: pointer}
+
+.sidebar{width: 40px;height: 225px;position: fixed;top:350px;right: 3px}
+.sidebar img{margin-bottom: 5px}
+.sidebar .code{background: url("../xhp_images/sidebar/qr_code.png") no-repeat center;display:none;width: 136px;height: 130px;;position: fixed;top:485px;right: 43px}
+.sidebar li:hover .code{display: block}

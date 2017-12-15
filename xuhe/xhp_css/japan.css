@@ -1,0 +1,61 @@
+.banner{background:url("../xhp_images/japan/banner_1.png") no-repeat center;width: 100%;height: 330px;min-width: 1000px}
+.banner a{width: 100%;height: 100%;display: block}
+
+.japmed{width: 1000px;margin:81px auto 0;text-align: center}
+.japmed h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.japmed h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;display: block;margin-top: 9px}
+.japmed p{font-size: 14px;text-align: left;width: 700px;margin: 20px auto 51px}
+.japmed dl{width: 168px;float: left;text-align: center;margin: 0 81px 31px}
+.japmed dl dd{font-size:16px;margin-top: 20px;height: 40px;width: 168px}
+
+.banner2{padding-top:30px;clear:both;background: url("../xhp_images/japan/banner_2.png") no-repeat center bottom;width: 100%;height: 405px;min-width: 1000px}
+
+.adv{width: 1000px;margin: 78px auto 0 ;text-align: center;}
+.adv h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.adv h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;display: block;margin-top: 9px}
+.adv dl{width: 280px;float: left;margin: 38px 80px 31px 0}
+.adv .no_margin{margin-right: 0}
+.adv dl dd{font-size: 12px;text-align:left;width: 268px;height: 142px}
+.adv dl dd p{font-size: 16px;margin:17px 0 14px}
+
+.box{clear:both;width: 100%;height: 35px}
+.hotel{width: 100%;height: 653px;min-width: 1000px;background: #f0f3f6;}
+.hotel_con{width: 1000px;margin: 0 auto;text-align: center;padding-top: 60px}
+.hotel_con h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.hotel_con span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;display: block;margin-top: 9px}
+.hotel_pic{padding-top:60px}
+.hotel_pic img{float: left}
+
+.hospital{clear:both;width: 1000px;margin: 0 auto;padding-top:81px;text-align: center}
+.hospital h1{color: #1ab4c3;font-size: 32px;font-weight: normal}
+.hospital h1 span{color: #c3c3c3;text-transform: uppercase;font-size: 16px;display: block;margin-top: 9px;margin-bottom: 40px}
+.hospital_detail{height:170px;padding-bottom: 80px}
+.hospital_detail dl{float: left;width: 712px}
+.hospital_detail dl dt{float: left}
+.hospital_detail dl dd{margin-left: 312px;width: 400px}
+.hospital_detail dl dd h1{font-size: 16px;font-weight: normal;color: #2e2e2e;text-align: left;}
+.hospital_detail dl dd h1 span{font-size: 12px;color: #2e2e2e;margin-bottom: 12px;height: 70px;margin-bottom: 17px}
+.hospital_detail dl dd div{text-align: left}
+.hospital_detail dl dd div span{font-size:14px;margin-left:10px;background: url("../xhp_images/japan/talkbox.png") no-repeat center;width: 312px;height: 30px;display: inline-block;padding: 6px 0 0 26px}
+.detail_right{float: right;width: 115px;height: 89px;margin:30px 63px 0 0}
+.detail_right h1{font-size: 16px;margin:0}
+.detail_right h1 span{font-size: 14px;color: #1ab4c3;line-height:14px;margin:3px 0 18px}
+.detail_right p{line-height:32px;width: 115px;height: 32px;background: #1ab4c3;border-radius:1px;-webkit-border-radius: 1px}
+.detail_right p:hover{background: #1a9fc3}
+.detail_right p a{color: #FFFFFF}
+
+.banner3{width: 1000px;margin: 0 auto}
+
+.black_box{z-index:1;width: 100%;height:100%;background:rgba(0,0,0,.3);position:fixed;display: none}
+.sheet{display:none;z-index:10;box-shadow:0 0 22px #000;-webkit-box-shadow:0 0 22px #000;width: 500px;height: 536px;position: fixed;left: 50%;top: 50%;margin: -268px 0 0 -250px;background: #FFFFFF}
+.sheet i{background: url("../xhp_images/sidebar/cancel.png") no-repeat center;width: 16px;height: 16px;display:block;margin: 20px 0 0 467px;cursor: pointer}
+.sheet p{font-size: 22px;color: #1ab4c3;margin: 4px 0 0 64px}
+.sheet select{width: 377px;height: 41px;border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:0 10px;border-radius: 21px;-webkit-border-radius:2px}
+.sheet input{width: 357px;height: 41px;border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:0 10px;border-radius: 2px;-webkit-border-radius:2px}
+.sheet textarea{width:357px;height: 101px; border: 1px solid #c3c3c3;margin: 13px 0 0 61px;padding:10px 10px;border-radius: 21px;-webkit-border-radius:2px}
+.sheet .btn{color: #FFFFFF;background: #1ab4c3;cursor: pointer}
+
+.sidebar{width: 40px;height: 225px;position: fixed;top:350px;right: 3px}
+.sidebar img{margin-bottom: 5px}
+.sidebar .code{background: url("../xhp_images/sidebar/qr_code.png") no-repeat center;display:none;width: 136px;height: 130px;;position: fixed;top:485px;right: 43px}
+.sidebar li:hover .code{display: block}

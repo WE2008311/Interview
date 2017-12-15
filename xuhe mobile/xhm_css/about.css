@@ -1,0 +1,42 @@
+.container{width: 27rem;margin: 0 auto}
+
+header{box-shadow: 0 3px 3px rgba(215,215,215,.9);width: 27rem;height:3rem;line-height:3rem;margin:0 auto;text-align: center;position: fixed;background: #fff;z-index: 10;}
+header .title{color: #1ab4c3;font-size: 1.1rem;}
+header .nav{width: 1.25rem;height: 0.9rem;cursor: pointer;position: absolute;right: 1.5rem ;top:1rem}
+header .nav i{display: block;width: 1.25rem; height: 0.1rem;background: #666;position: absolute;left: 0;transition:transform .3s;-webkit-transition:transform .3s;}
+header .nav i:nth-child(1){top: 0;transform-origin: left bottom;-webkit-transform-origin: left bottom;}
+header .nav.on i:nth-child(1){transform:rotate(40deg);}
+header .nav i:nth-child(2){top: 0.4rem;opacity: 1;}
+header .nav.on i:nth-child(2){opacity: 0;}
+header .nav i:nth-child(3){top: 0.8rem;transform-origin: left top;-webkit-transform-origin: left top;}
+header .nav.on i:nth-child(3){transform:rotate(-40deg);}
+
+header .tag_nav{display: none;width: 27rem;height: 8.5rem;background: #fff;}
+header .tag_nav li{font-size:.8rem;line-height: 1.55rem;opacity: 0;transition: .3s ;-webkit-transition: .3s;}
+header .tag_nav li.on{opacity: 1;}
+header .tag_nav li a:hover{color: #1ab4c3;cursor:pointer}
+/*header*/
+.banner{margin-top: 3rem;}
+
+.video{margin:2.5rem auto 0;width: 24rem;text-align:center}
+.video p{font-size:0.85rem;margin-bottom:1.75rem;line-height: 1.1rem;}
+.video img{height:11.25rem }
+.video h2{font-weight:normal;font-size:0.85rem;margin:2rem 0 2.82rem;line-height: 1.1rem;}
+/*��Ƶ*/
+
+.about_pic{margin:2.5rem auto 0;}
+.about_pic .pic_info{width:13.5rem;height:11rem;float: left}
+
+.info{margin-top:0.8rem;text-align:center;}
+.info dl{margin: 1.45rem auto 0;width:11.2rem}
+.info dl dt{font-size:1rem;color:#1ab4c3}
+.info dl dd{font-size:1rem;color:#1ab4c3;margin-top: 0.6rem;line-height: 1.1rem;}
+.info .logo{width:17.75rem}
+.info .logo dt{width: 11.2rem;margin: 0 auto}
+.info .logo dd{color: #94a5b4}
+
+footer{width: 27rem;background: #1ab4c3;margin-top: 3.5rem;text-align: center;padding-bottom: 1rem}
+footer img{margin-top: 1.25rem;width: 5.4rem;height: 5.4rem;}
+footer p{font-size: 0.65rem;color: #ffffff;margin-top: 0.75rem}
+footer h1{color: #ffffff;margin-top: 0.4rem}
+footer p:nth-of-type(2){margin: 0.475rem auto 0;line-height:1rem;width: 14rem}

@@ -1,0 +1,6 @@
+.con{width: 1000px;margin: 0 auto;min-width: 1000px;height: 90px}
+.con .logo{float: left;margin-top: 22px}
+.con ul{float: right;margin-right: 20px}
+.con ul li{float: left;}
+.con ul li a{text-align:center;display:inline-block;width:90px;height:90px;line-height:90px;font-size: 14px}
+.con ul li a:hover{-webkit-transition:.8s;transition:.8s;text-align:center;display:inline-block;width:90px;height:90px;line-height:90px;background: #1ab4c3;color: #ffffff}

@@ -1,0 +1,196 @@
+*{margin: 0;padding: 0;list-style: none;}
+body{font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "΢���ź�", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; font-size:12px; line-height:24px; background:#fff;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased; }
+a{text-decoration: none;color: #000000;}
+a:hover{color: #00a684;}
+.cl{clear: both;}
+
+/*导航*/
+.nav{width: 100%;min-width: 1236px;background: #000;height: 76px;}
+.nav_con{width: 1236px;margin: 0 auto;position: relative;}
+.nav_con>img{position: absolute;top: 3px;left: 30px;z-index:10;}
+.list{position: absolute;right: 75px;top: 20px;}
+.list>li{float: left;text-align: center;font-size: 16px;font-weight: 600;color: #fff;width: 130px;height: 60px;cursor: pointer;}
+.nav_sec{display: none;z-index: 10;position: absolute;top: 65px;}     /*z-index只对设置了position的元素生效*/
+.nav_sec li{float: none;width: 130px;}
+.nav_sec li a{font-size:14px;color: #fff;line-height: 2.2em;}
+.nav_sec li a:hover{color: #00a684;}
+.list li p{color: #3a3924;font-size: 10px;}
+.nav_down{display: none;width: 100%;height: 270px;background: rgba(0,0,0,.4);z-index:1;position: fixed;top: 76px;left: 0;}
+.list:hover .nav_sec,
+.list:hover .nav_down{display: block;}
+
+/*banner图和登录界面*/
+.banner{z-index: 0;width: 100%;min-width: 1236px;height: 610px;background: url(../LOL_images/banner.png) no-repeat top center;background-size: cover;}
+.banner_con{width: 1236px;margin:0 auto;position: relative;}
+.banner_con .banner_l{position: absolute;top: 126px;}
+/*左*/
+.banner_l h1{line-height: 36px;font-size:36px;color: #00a684;background-image: -webkit-linear-gradient(top,#12dcc0,#00a684);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.banner_l p{color: #fff;font-size: 10px;margin-top: 16px;}
+.banner_l img{margin-top: 27px;cursor: pointer;}
+.banner_l a{margin-top: 21px;color: #00a684;display: block;width: 154px;height: 35px;border: 2px solid #00a684;text-align:center;font-size: 10px;line-height: 35px;background-image: -webkit-linear-gradient(top,rgba(0,0,0,.4),rgba(0,0,0,.8));}
+.banner_l a:hover{background: rgba(0,0,0,.9);}
+/*右*/
+.banner_r{position: absolute;top: 450px;right: -7px;}
+.banner_r p{font-size: 10px;color: #888787}
+.banner_r p span{font-size: 11px;color: #12dcc0}
+.banner_r p a{margin-left: 7px;display: inline-block;width: 81px;height: 24px;border: 2px solid #12dcc0;color: #00a684;text-align: center;line-height: 24px;background: rgba(0,0,0,.3);}
+.banner_r p a:hover{background: rgba(0,0,0,.9);}
+/*下载和登录*/
+.banner_b{width: 1240px;height: 115px;position: absolute;top: 495px;}
+.banner_b>a{width: 220px;height: 115px;display: inline-block;background: url(../LOL_images/banner_btn.png) no-repeat center;}
+.banner_b_r{float:right;width: 1020px;height: 115px;background: url(../LOL_images/banner_b_r.png) no-repeat center;}
+.banner_b_r dl {width: 112px;text-align: center;margin-top: 22px;float: left;}
+.banner_b_r dl:nth-child(5) dt{margin-top: -3px;}
+.banner_b_r dl dd>a{color: #e9eaef;font-size: 16px;}
+.banner_b_r dl dd>a:hover{color: #00a684;}
+.banner_b_r dl dd:nth-child(3){color:#5e677f;font-size: 9px;margin-top: -10px;}
+.login{margin-top: 17px;}
+.login img{float: left;margin-right: 23px;margin-left: 20px;}
+.login_r p:nth-child(1){color: #fafafa;font-size: 14px;}
+.login_r p>a{color: #00a684;font-size: 14px;}
+.login_r p:nth-child(2){font-size: 9px;color: #c1cfe8;}
+.login_r p:nth-child(3){font-size: 9px;color: #fff;}
+
+/*新闻中心*/
+.news{width: 1236px;margin: 0 auto;padding-top:34px;}
+/*新闻中心左部分*/
+.news_l{width: 782px;height: 370px;position: relative;overflow: hidden;float: left;}
+.news_img{width: 3915px;position: absolute;top: 0;left: -782px;}
+.news_img img{float: left;}
+.news_btn{position: absolute;top: 330px;}
+.news_btn span{cursor: pointer;float:left;display: inline-block;width: 156px;height: 40px;text-align: center;line-height: 40px;background: #e6e6e6;}
+.news_btn .on{background: #00a684;color: #fff;}
+/*新闻中心右部分*/
+.news_r{width: 408px;height: 370px;float: right;}
+.news_title{width: 408px;height: 43px;}
+.news_title p{width: 91px;float: left;font-size: 16px;font-weight: bold;line-height: 43px;border-bottom: 4px solid #eaeaea;text-align: center;cursor: pointer;}
+.news_title .on{border-bottom:4px solid #00a684;color: #00a684;}
+.news_title p:nth-child(5){width: 44px;}
+.news_txt p{height: 25px;line-height: 25px;margin-bottom: 6px;}
+.news_txt p span{margin-right: 17px;display: inline-block;width: 50px;height: 25px;border-radius: 13px;background: #e8e8e8;font-size: 10px;line-height: 25px;text-align: center;}
+.news_txt p b{font-weight: normal;float: right;}
+.news_txt h2{margin-top: 22px;text-align: center;margin-bottom: 18px;font-size: 15px;}
+.news_txt h2 a{color: #00a684;}
+.news_txt div{width: 408px;height: 40px;background: #efeded;text-align: center;line-height: 40px;margin-top: 8px;}
+.news_txt div a{font-size: 11px;}
+
+/*左边栏*/
+/*视频中心*/
+.video{width: 1236px;margin: 0 auto;padding-top: 55px;}
+.video_l{float: left;width: 784px;}
+.video_l h1{background: url(../LOL_images/video.png) no-repeat 10px top;height: 28px;line-height:28px;padding-left: 48px;float: left;}
+.video_l .video_btn{float: right;}
+.video_l  .video_btn span{cursor: pointer;font-size: 14px;display: inline-block;padding: 0 10px;height: 33px;background: #efefef;border-radius: 16px;line-height: 33px;text-align: center;}
+.video_l .video_btn span:nth-child(1){margin-right: 7px;background: url(../LOL_images/paper.png) no-repeat 10px 9px #efefef;padding-left: 32px;box-sizing: border-box;}
+.video_title{width: 784px;padding-top: 61px;}
+.video_title p{width: 130px;float: left;font-size: 16px;font-weight: bold;line-height: 43px;border-bottom: 4px solid #eaeaea;text-align: center;cursor: pointer;}
+.video_title .on{border-bottom:4px solid #00a684;color: #00a684;}
+.video_movie{clear: both;width: 784px;height:338px;overflow: hidden;padding-top: 27px;}
+.video_movie dl{width: 181px;float: left;margin-right: 20px;margin-bottom: 17px;}
+.video_movie dl:nth-child(4n){margin: 0;}
+.video_movie dl dt{position: relative;}
+.video_movie dl dt p{padding-right:3px;text-align:right;box-sizing: border-box;color: #fff;position: absolute;bottom: 8px;left: 0;height: 20px;width: 181px;line-height: 20px;background: rgba(0,0,0,.7);}
+.video_movie dl dd a{font-size: 14px;}
+.video_exbtn{display:block;margin-top: 30px;cursor: pointer;width: 784px;height: 40px;background: #e6e6e6;line-height: 40px;text-align: center;font-size: 14px;}
+.video_exbtn span{color: #00a684;}
+/*赛事中心*/
+.game{margin-top: 52px;}
+.game h1{background: url(../LOL_images/game.png) no-repeat 10px top;}
+.game .game_btn{float: right;}
+.game .game_btn span{cursor: pointer;font-size: 14px;display: inline-block;padding: 0 10px;height: 33px;background: #efefef;border-radius: 16px;line-height: 33px;text-align: center;}
+.game .game_txt{padding-top: 70px;}
+.game .game_txt .game_txt_l{float: left;}
+.game .game_txt .game_txt_l dd{cursor: pointer;font-weight:bold;text-align: center;line-height: 40px;font-size: 16px;width: 180px;height: 40px;background: url(../LOL_images/comp_btn.png) no-repeat center;}
+.game .game_txt .game_txt_l dd a:hover{color: #000;}
+.game_txt_r{float: right;margin-left: 20px;width: 583px;}
+.game_txt_title{border-bottom: 1px solid #d5d4d4;padding-bottom: 10px;margin-bottom: 16px;}
+.game_txt_title h2{color: #00a684;font-size: 24px;margin-bottom: 6px;}
+.game_txt_r>p{margin-top: 5px;}
+.game_txt_r>p span{float: right;}
+/*客户服务*/
+.survice{padding-top: 93px;}
+.survice h1{background: url(../LOL_images/survice.png) no-repeat 10px top;}
+.survice .game_btn{float: right;}
+.survice .game_btn span{margin-right: 13px;cursor: pointer;font-size: 14px;display: inline-block;padding: 0 10px;height: 33px;background: #efefef;border-radius: 16px;line-height: 33px;text-align: center;}
+.survice .survice_title{width: 784px;padding-top: 40px;height: 43px;border-bottom: 4px solid #eaeaea;}
+.survice .survice_title p{width: 130px;float: left;font-size: 16px;font-weight: bold;line-height: 43px;border-bottom: 4px solid #eaeaea;text-align: center;cursor: pointer;}
+.survice .survice_title .on{border-bottom:4px solid #00a684;color: #00a684;}
+.survice .survice_title a{float:right;font-size: 14px;line-height: 43px;margin-left: 45px;}
+.survice .survice_title a:hover{color: #000;}
+.survice  .question ul{float: left;margin-top: 26px;}
+.survice  .question ul:nth-child(1){margin-right: 87px;}
+
+/*右边栏*/
+.video_r{width: 408px;float: right;height: 960px;}
+.video_r h1{background: url(../LOL_images/hero.png) no-repeat 15px center;padding-left: 48px;float: left;height: 31px;line-height: 31px;}
+.video_r .video_btn{float: right;}
+.video_r .video_btn span{margin-left: 10px;cursor: pointer;font-size: 14px;display: inline-block;padding: 0 10px;height: 33px;background: #efefef;border-radius: 16px;line-height: 33px;text-align: center;}
+.video_r_title{width: 408px;height: 43px;padding-top: 60px;}
+.video_r_title p{width: 136px;float: left;font-size: 16px;font-weight: bold;line-height: 43px;border-bottom: 4px solid #eaeaea;text-align: center;cursor: pointer;}
+.video_r_title .on{border-bottom:4px solid #00a684;color: #00a684;}
+/*英雄皮肤*/
+.video_r_img a{display: inline-block;width: 76px;height: 166px;clear: both;margin-right: 3px;margin-top: 12px;}
+.video_r_img a:nth-child(1){background: url(../LOL_images/hero1.png) no-repeat center;margin-left: 1px;}
+.video_r_img a:nth-child(2){background: url(../LOL_images/hero2.png) no-repeat center;}
+.video_r_img a:nth-child(3){background: url(../LOL_images/hero3.png) no-repeat center;}
+.video_r_img a:nth-child(4){background: url(../LOL_images/hero4.png) no-repeat center;}
+.video_r_img a:nth-child(5){background: url(../LOL_images/hero5.png) no-repeat center;margin-right: 0;}
+/*快速入口*/
+.video_r h1:nth-of-type(2){margin-top: 52px;background: url(../LOL_images/entrance.png) no-repeat left center;padding-left: 40px;float: left;height: 31px;line-height: 31px;}
+.video_r .entrance{text-align: center;box-sizing: border-box;padding-top: 17px;}
+.video_r .entrance a{margin-top: 8px;margin-right: 6px;display: block;width: 97px;height: 67px;border: 1px solid #e9e9e9;float: left;padding-top: 39px;box-sizing: border-box;}
+.video_r .entrance a:nth-child(4n){margin-right: 0;}
+.video_r .entrance a:nth-child(1){background: url(../LOL_images/entern_d_1.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(1):hover{background: url(../LOL_images/entern_g_1.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(2){background: url(../LOL_images/entern_d_2.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(2):hover{background: url(../LOL_images/entern_g_2.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(3){background: url(../LOL_images/entern_d_3.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(3):hover{background: url(../LOL_images/entern_g_3.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(4){background: url(../LOL_images/entern_d_4.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(4):hover{background: url(../LOL_images/entern_g_4.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(5){background: url(../LOL_images/entern_d_5.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(5):hover{background: url(../LOL_images/entern_g_5.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(6){background: url(../LOL_images/entern_d_6.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(6):hover{background: url(../LOL_images/entern_g_6.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(7){background: url(../LOL_images/entern_d_7.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(7):hover{background: url(../LOL_images/entern_g_7.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(8){background: url(../LOL_images/entern_d_8.png) no-repeat center 8px;}
+.video_r .entrance a:nth-child(8):hover{background: url(../LOL_images/entern_g_8.png) no-repeat center 8px;}
+/*活动中心*/
+.active{margin-top: 52px;}
+.video_r h1:nth-of-type(3){background: url(../LOL_images/active.png) no-repeat left center;padding-left: 40px;float: left;height: 31px;line-height: 31px;}
+.active .active_txt{margin-top: 20px;}
+.active .active_txt dl{float: left;position: relative;}
+.active .active_txt dl dd{width: 145px; height: 49px;position: absolute;bottom: 8px;left: 0;padding: 8px 0 0 10px;background: rgba(0,0,0,.8);box-sizing: border-box;}
+.active .active_txt dl dd a{color: #fff;}
+.active .active_txt_r{float: right;}
+.active .active_txt_r p{margin-top: 4px;height: 22px;width: 241px;border-radius:11px;}
+.active .active_txt_r p:nth-child(1){margin-top: 0;}
+.active .active_txt_r p:hover{background: #efefef;}
+.active .active_txt_r .on:hover{background: #00a684;}
+.active .active_txt_r p a{padding-left: 5px;font-size: 12px;display: inline-block;width: 133px;height: 22px;line-height: 22px;white-space:nowrap;overflow:hidden;text-overflow:clip;}
+.active .active_txt_r p:hover a{color: #000;}
+.active .active_txt_r .on:hover a{color: #fff;}
+.active .active_txt_r p span{float: right;display: inline-block;width: 60px;height: 22px;border-radius: 11px;background:#efefef;vertical-align: 0;text-align: center;line-height: 22px;}
+.active .active_txt_r .on span{background: #00a684;color: #fff;}
+/*QT语音*/
+.qt{margin-top: 80px;width: 399px; height: 90px;background: url(../LOL_images/qt.png) no-repeat center;}
+.qt a{width: 100%;height: 100%;display: block;}
+
+/*尾部*/
+.footer{width: 100%;min-width: 1236px;height: 236px;background: #e4e3e3;margin-top: 84px;}
+.footer_con{width: 1236px;margin: 0 auto;}
+.footer_top{position: relative;padding-top: 33px;padding-bottom: 12px;border-bottom: 3px solid #c6c6c6;height: 66px;}
+.footer_top dl{float: left;}
+.footer_top dl dt{float: left;}
+.footer_top dl dd{float: left;margin-left: 20px; line-height: 1.4em;width: 166px;}
+.footer_top dl dd h3{margin-top: 7px;}
+.footer_top dl dd p{margin-top: 7px;color: #818181;}
+.footer_top ul{float: left;padding-top: 3px;margin-left: 161px;}
+.footer_top ul li p{width: 385px;color: #818181;}
+.footer_top .select{cursor: pointer;width: 252px; height: 29px;border: 4px solid #d4d4d4;background:url(../LOL_images/arrow_down.png) no-repeat 247px center #f1efef;float: right;line-height: 29px;padding-left: 18px;}
+.footer_top .media{overflow: scroll;display: none;position: absolute;top: -176px;right: 0;width: 270px;height: 205px;border: 4px solid #d4d4d4;background: #fff;}
+.footer_top .media a{display: block;width: 270px;height:20px;text-align: center;line-height: 20px;margin: 5px 0;}
+.footer_top .media a:hover{background: #f1efef;color: #000;}
+.footer_bottom img{margin-top: 31px;margin-left: 11px;}
+.footer_r{float: right;padding-top: 24px;line-height: 1.6em;}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uihero</title>
+    <style>
+        *{padding: 0;margin: 0;list-style: none;font-family:"Arial";color:#4d5866;}
+        a{text-decoration: none; color:#fff;}
+        .cl{clear: both;}
+
+        .banner{background: url(Uihero_images/image-bg.png) no-repeat center;width: 100%;height: 810px;min-width: 1090px;}
+        .banner_con{background: rgba(50,58,69,.97);width: 100%;height: 100%;position: relative;}
+        .nav{width: 1000px;margin:0 auto;position: relative;}
+        .nav .logo{float: left;margin-top:65px;}
+        .nav .list{position: absolute;width: 700px;right: 0;}
+        .nav .list ul{margin-top: 65px;position: absolute;z-index: 5;}
+        .nav .list ul li{float:left;}
+        .nav .list ul li a{font-size: 16px;font-weight: 100;height: 40px;line-height: 40px;margin: 0 16px;padding: 6px 10px;}
+        .nav .ul_bg{height:40px;width: 150px;background: #ff4b5a;border-radius:20px;position: absolute;top: 65px;z-index: 2;}
+
+        /*轮播图*/
+        .banner_txt{width: 1090px; height: 500px;position: absolute;top: 150px;left: 50%;margin-left: -545px;}
+        .txt{display: none;}
+        .txt img{width: 298px;position: absolute; left: 15%;}
+        .txt .txt_r{position: absolute; right: 0;margin-top: 100px;}
+        .txt_r p{color:#fff;}
+        .txt_r p:nth-child(1){font-size: 35px;font-weight: lighter;}
+        .txt_r p:nth-child(2){font-size:18px;margin-top: 20px;line-height: 25px;}
+        .txt_r p:nth-child(3){margin-top: 40px;font-size:20px;}
+        .txt_r p:nth-child(4){margin-top: 16px;font-size:20px;}
+        .txt_r p:nth-child(3) span,
+        .txt_r p:nth-child(4) span{margin-right: 8px;display: inline-block;width: 8px;height: 8px;border-radius:50%;background: #ff4b5a;border: 2px solid #244c64;}
+        .txt_r p:nth-child(5){font-size: 35px;margin-top: 40px;}
+        .txt_r p:nth-child(5) b{color: #fff;}
+        .txt_r p:nth-child(5) i{font-style:normal;color: #29af61;}
+
+        .btn{cursor: pointer;width: 75px;height: 57px;border:2px solid #fff;font-size: 40px;color: #fff;line-height: 57px;text-align: center;display: inline-block;position: absolute;top: 45%;}
+        .btn_l{left:45px;}
+        .btn_r{right:45px;}
+
+        .banner_node{position: absolute;left: 50%; margin-left: -48px;top: 93%;}
+        .banner_node li{width: 12px;height: 12px;border-radius: 50%;background: #23282f;float: left;margin: 0 2px;}
+        .banner_node .on{background: #6d7d92;}
+
+        .page{width: 1090px;margin: 0 auto;}
+        .web{margin-top: 156px;position: relative;}
+        .web img{width: 672px;}
+        .web_txt{position: absolute;top: 0;left: 55%; }
+        .web_txt p:nth-child(1){font-size: 32px;font-weight: bold;}
+        .web_txt p:nth-child(2){color: #ff4b5a;margin-top: 25px;font-size: 20px;}
+        .web_txt p:nth-child(3){font-size: 20px;margin-top: 15px;}
+        .web_txt a{margin-top: 15px;cursor: pointer;display: block;width: 145px;height: 47px;background: #ff4b5a;line-height: 47px;text-align: center;font-size: 20px;border-radius: 2px;}
+        .video{margin-top: 156px;position: relative;}
+        .video img{width: 544px; position: absolute;right: 0;}
+        .video_txt{position: absolute;top: 0;left: 0; }
+        .video_txt p:nth-child(1){font-size: 32px;font-weight: bold;}
+        .video_txt p:nth-child(2){color: #1fab5a;margin-top: 25px;font-size: 20px;}
+        .video_txt p:nth-child(3){font-size: 20px;margin-top: 15px;}
+        .video_txt a{margin-top: 15px;cursor: pointer;display: block;width: 145px;height: 47px;background: #1fab5a;line-height: 47px;text-align: center;font-size: 20px;border-radius: 2px;}
+
+        .bg{width: 100%;min-width:1090px;height: 72px;background: #38404a;margin-top: 600px;}
+
+        .designer{width: 100%;min-width:1090px;height: 500px;background: #edebeb;text-align: center;}
+        .designer>img{width: 50px;margin-top: 30px;}
+        .designer>p{font-size: 32px;margin-top: 57px;}
+        .designer .person{margin-top: 66px;}
+        .designer .person>img{width: 128px;}
+        .person_txt{display: inline-block;vertical-align:top;margin: 30px 0 0 37px;font-size: 24px;}
+        .person_txt p{font-size: 30px;margin-bottom: 4px;}
+
+        .flat_con{width: 100%;min-width: 1090px; margin: 0 auto; position: relative;}
+        .flat_con .flat_txt{margin: 120px 0 0 15%;}
+        .flat_con .flat_txt p{font-size: 20px;}
+        .flat_con .flat_txt p:nth-child(1){font-size: 32px;font-weight: bold;margin-bottom: 24px;}
+        .flat_con .flat_txt p:nth-child(2){margin-bottom: 24px;}
+        .flat_con .flat_txt p:nth-child(3){padding-bottom: 50px;border-bottom: 1px solid #4d5866;width: 440px;}
+        .flat_con .flat_txt span{margin-right: 10px;display: inline-block;width: 25px ;height: 25px;background: url(Uihero_images/mark.png) no-repeat center;background-size: contain;vertical-align: text-bottom;}
+        .flat_con .flat_txt p:nth-child(4){margin-top: 50px;}
+        .flat_con .flat_txt p:nth-child(5){margin-top: 25px;}
+        .flat_con .flat_txt p:nth-child(6){margin-top: 25px;}
+        .flat_con .flat_txt p:nth-child(7){margin-top: 25px;}
+        .flat_con .flat_txt p:nth-child(8){font-size: 35px;margin-top: 40px;}
+        .flat_con .flat_txt p:nth-child(8) i{font-style:normal;color: #4d5866;}
+        .flat_con .flat_txt a{margin: 38px 0 188px;cursor: pointer;display: block;width: 225px;height: 66px;background: #1fab5a;line-height: 66px;text-align: center;font-size: 20px;border-radius: 2px;}
+        .flat_con img{width: 534px;position: absolute;top: 0;right: 0;}
+
+        .client{text-align: center;width: 100%;min-width: 1090px;background: #faf8f8;}
+        .client h1{font-size: 32px;padding-top: 45px;}
+        .client p{font-size: 22px;margin-top: 10px;}
+        .client img{width: 1070px;margin: 90px 0 90px;}
+
+        .price{width: 1090px;margin: 80px auto 0;text-align: center;}
+        .price h1{font-size: 32px;}
+        .price p{font-size: 22px;margin-top: 10px;}
+        .price .price_box{width: 310px;height: 470px;border: 1px solid #a1a1a1;float: left;margin: 70px 24px 100px;}
+        .price .price_box p{color: #999;font-size: 22px;}
+        .price .price_box p b{color: #999;}
+        .price .price_box p:nth-child(1){color: #5a677b;font-size: 32px;}
+        .price .price_box p:nth-child(2){padding-bottom: 11px;border-bottom: 1px solid #a1a1a1;}
+        .price .price_box p:nth-child(3){margin-top: 66px;}
+        .price .price_box a{cursor: pointer;display: inline-block;width: 225px;height: 66px;margin-top: 50px;background: #1fab5a;border-radius: 2px;font-size: 22px;line-height: 66px;text-align: center;}
+
+        .work{width: 100%;min-width: 1090px;padding-bottom: 108px;background: #f8f8f8;}
+        .work>p{font-size: 32px;font-weight: bold; text-align: center;padding-top: 70px;}
+        .work .arrow{width: 960px;height: 57px;margin: 0 auto;border-bottom: 1px solid #999;position: relative;}
+        .arrow .arrow_btn{position: absolute;right: 0;}
+        .arrow .arrow_btn b{cursor: pointer;font-size: 18px;margin-right: 4px;}
+        .arrow .arrow_btn b.clo{color: #f96b61;}
+        .work_show{width: 1090px;margin:45px auto;overflow: hidden;}
+        .work_con{width: 2180px;position: relative;}
+        .work_img{width: 1090px;}
+        .work_img:nth-child(2){position: absolute; top: 0;left: 1090px;}
+        .img{width: 355px;height: 292px;float: left;margin: 4px;}
+        .img:hover .img_bg{display: block;}
+        .img_bg{display: none;background: rgba(255,75,90,.78);width: 100%;height: 100%;position: relative;}
+        .img_bg p{position: absolute;top: 15px;left: 50%;margin-left:-165px;padding-top: 22px;box-sizing: border-box;width: 330px;height: 262px;border: 1px solid #fff;color: #fff;text-align: center;}
+        .img_bg b{color: #fff;}
+        .img_bg img{width: 95px;position: absolute;top: 115px;left: 50%;margin-left:-48px;}
+
+        .twitter{margin-top: 100px;width: 100%;min-width: 1090px;height: 610px;background: url(Uihero_images/image-bg2.png) no-repeat center;background-size:cover;}
+        .twitter p{color: #fff;font-size: 18px;}
+        .twitter_bg{position: relative;}
+        .twitter_bg>p:nth-of-type(1){margin-top: 46px;}
+        .twitter_bg>p:nth-of-type(2){margin-top:36px;}
+        .twitter_bg{width: 100%;min-width: 1090px;height: 100%;background: rgba(49,57,67,.5);text-align: center;}
+        .twitter_img{width: 66px; margin-top: 100px;}
+        .twitter_arrow p{position: absolute;top: 50%;}
+        .twitter_arrow p:nth-child(1){left: 15%;}
+        .twitter_arrow p:nth-child(2){right: 15%;}
+        .logo_img{margin-top: 28px;}
+        .logo_img p{display:inline-block;vertical-align: 35%;}
+        .logo_img img{height: 40px;margin-right: 22px;}
+
+        .contact{width: 100%;height: 495px;min-width: 1090px;background: #313943;text-align: center;}
+        .contact p{color: #fff;}
+        .contact p:nth-child(1){font-size: 32px;font-weight: bold;padding-top: 90px;}
+        .contact p:nth-child(2){font-size: 20px;margin-top: 30px;}
+        .contact p:nth-child(3){font-size: 22px;margin: 60px auto 0;width: 225px;height: 66px;line-height: 66px;background: #ff4b5a;border-radius: 2px;}
+
+        .footer{width: 100%;min-width: 1090px;height: 125px;background: #2a3039;padding-top: 47px;box-sizing: border-box;}
+        .footer_con{width: 1090px;margin: 0 auto;}
+        .footer_con ul{float: left;}
+        .footer_con ul li{float: left;font-size: 18px;color: #dad9d9;margin: 0 8px;height: 32px;line-height: 32px;}
+        .footer_con img{width: 32px;}
+        .footer_con dl{float: right;}
+        .footer_con dt{margin: 0 8px;float: left;}
+        .footer_con dd{font-size: 18px;color: #dad9d9;height: 32px;line-height: 32px;float: left;}
+    </style>
+    <script type="text/javascript" src="Uihero_js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="Uihero_js/js_banner.js"></script>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="banner_con">
+            <div class="nav">
+                <a class="logo"><img src="Uihero_images/Uihero.png" height="40px"></a>
+                <div class="list">
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">STUDIO</a></li>
+                        <li><a href="#">WORKS</a></li>
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                    <div class="ul_bg"></div>
+                </div>
+            </div>
+            <div class="cl"></div>
+            <div class="banner_txt">
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+                <div class="txt">
+                    <img src="Uihero_images/Phone_1.png">
+                    <div class="txt_r">
+                        <p>Flat & Modern transparent</p>
+                        <p>flat inspired UI with some modern transparent </br>Element</p>
+                        <p><span></span>16Psd Files Easy to Edite</p>
+                        <p><span></span>All Font used Link Included</p>
+                        <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_btn">
+                <div class="btn btn_l">&lt;</div>
+                <div class="btn btn_r">&gt;</div>
+            </div>
+            <ul class="banner_node">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="cl"></div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="web">
+            <img src="Uihero_images/iMac.png">
+            <div class="web_txt">
+                <p>Web & Mobile Landing Page</p>
+                <p>Simple & Elegant User Interface</p>
+                <p>One morning, when Gregor Samsa woke from </br>troubled dreams, he himself transformed in </br>bed into a horrible vermin. He  his ar-</br>mour-back.</p>
+                <a>Read more</a>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video_txt">
+                <p>Video Promotional on vimeo</p>
+                <p>Simple & Elegant User Interface</p>
+                <p>One morning, when Gregor Samsa woke from </br>troubled dreams, he himself transformed in </br>bed into a horrible vermin. He  his ar-</br>mour-back.</p>
+                <a>More detail</a>
+            </div>
+            <img src="Uihero_images/video-player.png">
+        </div>
+    </div>
+    <div class="bg"></div>
+    <div class="designer">
+        <img src="Uihero_images/quotation.png">
+        <p>“Good design is all about making other designers </br>feel like idiots because that idea wasn’t theirs.”</p>
+        <div class="person">
+            <img src="Uihero_images/designer.png">
+            <div class="person_txt"><p>Frank Chimero</p>Professional Designer.</div>
+        </div>
+    </div>
+    <div class="flat">
+        <div class="flat_con">
+            <div class="flat_txt">
+                <p>Flat & Modern transparent </p>
+                <p>flat inspired UI with some modern transparent</br>Element</p>
+                <p>En se réveillant un matin après des rêves agités,</br>Gregor Samsa se retrouva, dans son lit, méta</br>morphosé en un monstrueux insecte. </p>
+                <p><span></span>16Psd Files Easy to Edite</p>
+                <p><span></span>All Font used Link Included</p>
+                <p><span></span>16Psd Files Easy to Edite</p>
+                <p><span></span>All Font used Link Included</p>
+                <p>Get Now Your <b>Copy</b> just for <i>7$</i></p>
+                <a>Download Now</a>
+            </div>
+            <img src="Uihero_images/Phone.png">
+        </div>
+    </div>
+    <div class="client">
+        <h1>Our Clients</h1>
+        <p>Voyez ce jeu exquis wallon</p>
+        <img src="Uihero_images/Gradient-Map-1.png">
+    </div>
+    <div class="cl"></div>
+    <div class="price">
+        <h1>Pricing Table</h1>
+        <p>Choose From Our Amazing Plans</p>
+        <div class="price_box">
+            <P>Small</P>
+            <P>19$/Month</P>
+            <P>10,000 messages</P>
+            <P><b>Unlimited</b> data</P>
+            <P><b>Unlimited</b> users</P>
+            <P>first 30 days free</P>
+            <a>Sign Up</a>
+        </div>
+        <div class="price_box">
+            <P>Medium</P>
+            <P>19$/Month</P>
+            <P>10,000 messages</P>
+            <P><b>Unlimited</b> data</P>
+            <P><b>Unlimited</b> users</P>
+            <P>first 30 days free</P>
+            <a>Sign Up</a>
+        </div>
+        <div class="price_box">
+            <P>Large</P>
+            <P>19$/Month</P>
+            <P>10,000 messages</P>
+            <P><b>Unlimited</b> data</P>
+            <P><b>Unlimited</b> users</P>
+            <P>first 30 days free</P>
+            <a>Sign Up</a>
+        </div>
+    </div>
+    <div class="cl"></div>
+    <div class="work">
+        <p>Our Work</p>
+        <div class="arrow">
+            <div class="arrow_btn">
+                <b>&lt;</b>
+                <b class="clo">&gt;</b>
+            </div>
+        </div>
+        <div class="work_show">
+            <div class="work_con">
+                <div class="work_img">
+                    <div class="img" style="background: url(Uihero_images/img1.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img2.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img3.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img4.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img5.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img6.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img7.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img8.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img9.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="work_img">
+                    <div class="img" style="background: url(Uihero_images/img1.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img2.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img3.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img4.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img5.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img6.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img7.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img8.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                    <div class="img" style="background: url(Uihero_images/img9.png) no-repeat center;background-size:cover;">
+                        <div class="img_bg">
+                            <p><b>One morning, when Gregor</b></br>Samsa woke from troubled in </p>
+                            <img src="Uihero_images/link.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl"></div>
+    <div class="twitter">
+        <div class="twitter_bg">
+            <img src="Uihero_images/twitter-copy.png" class="twitter_img">
+            <div class="logo_img"><img src="Uihero_images/Uihero.png"><p>On Twitter @Uihero</p></div>
+            <div class="twitter_arrow">
+                <p>&lt;</p>
+                <p>&gt;</p>
+            </div>
+            <p>“A designer knows he has achieved perfection not when there is nothing left to add,</br>but when there is nothing left to take away.”</p>
+            <p> Antoine de Saint-Exupéry</p>
+        </div>
+    </div>
+    <div class="contact">
+        <p>SO WHAT YOU THINK ?</p>
+        <p>“Good design is all about making other designers feel like idiots because</br>that idea wasn’t theirs.”</p>
+        <p>Contact Me</p>
+    </div>
+    <div class="footer">
+        <div class="footer_con">
+            <ul>
+                <li><img src="Uihero_images/facebook.png"></li>
+                <li><img src="Uihero_images/Twitter.png"></li>
+                <li><img src="Uihero_images/Dribbble.png"></li>
+                <li><img src="Uihero_images/Dribbble-copy.png"></li>
+                <li>/AYOUB ELRED</li>
+            </ul>
+            <dl>
+                <dt><img src="Uihero_images/Copy-right.png"></dt>
+                <dd>2014  By : AYOUB ELRED</dd>
+
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
